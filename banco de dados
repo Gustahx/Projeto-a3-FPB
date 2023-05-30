@@ -8,4 +8,4 @@ PRIMARY KEY (login)
 );
  INSERT INTO login (nome, login, senha)
  VALUES
-      ("adm", "admin_ti", "admin321");
+      ("administrador", "admin_ti", "admin321");
