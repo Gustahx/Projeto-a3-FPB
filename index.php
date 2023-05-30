@@ -9,13 +9,21 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel= "stylesheet" href= "estilo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Projeto A3 MANHÃ</title>
 </head>
 <body>
-    <center>
-        <h1>Olá, <?php echo $_SESSION['nome'] ?> </h1>
-        <a href="cadastro.php">Cadastrar</a><br>
-        <a href="logout.php">Sair</a>
-    </center>  
+    Olá,
+    <?php
+    if(isset($_SESSION['nome'])==null){
+        ?>
+        visitante <br>
+        <a href="login.php"><input type="submit" name="login" value="Login"><br><br>
+        <?php
+    }else {
+        echo $_SESSION['nome'];?>
+        <a href="cadastro.php"><input type="submit" name="cadastrar" value="Cadastrar"><br><br>
+        <a href="logout.php"><input type="submit" name="sair" value="Sair"><br><br>
+        <?php } ?>
+        <progress value="50" max="100"></progress>
 </body>
 </html>
