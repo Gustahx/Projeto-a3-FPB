@@ -1,6 +1,7 @@
 <?php
-$_SESSION['nome'] = null
+session_start();
+$_SESSION['nome'] = null;
 session_destroy();
-header('Location: login.php');
-
+header('Location: index.php');
 ?>
+
