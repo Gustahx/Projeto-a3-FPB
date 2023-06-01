@@ -6,9 +6,9 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel= "stylesheet" href= "estilo.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="estilo.css">   
     <title>Projeto A3 MANHÃ</title>
 </head>
 <body>
@@ -22,6 +22,8 @@ session_start();
     }else {
         echo $_SESSION['nome'];?>
         <a href="cadastro.php"><input type="submit" name="cadastrar" value="Cadastrar"><br><br>
+        <a href="listar.php"><input type="submit" name="listar" value="Listar Usúario"><br><br>
+        <a href="alterar.php"><input type="submit" name="alterar" value="Alterar senha"><br><br>
         <a href="logout.php"><input type="submit" name="sair" value="Sair"><br><br>
         <?php } ?>
         <progress value="50" max="100"></progress>
