@@ -4,4 +4,3 @@ $_SESSION['nome'] = null;
 session_destroy();
 header('Location: index.php');
 ?>
-
