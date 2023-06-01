@@ -4,22 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel= "stylesheet" href= "estilo.css">
+    <link rel="sttylesheet" text="text/css" href="estilo.css">   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto A3 MANHÃ</title>
+    <title></title>
 </head>
 <body>
-    <center>
-        <form id="cadastro" action="cadastrar.php" method="POST">
-            Nome Completo : <input type="text" name="nome" required><br>
-            Data de Nascimento : <input type="date" name="data" required><br>
-            Login : <input type="text" name="login" required><br>
-            Senha : <input type="password" name="senha" required><br><br>
-            <input type="submit" name="cadastrar" value="Cadastrar">
-        </form>
-        <a href="index.php">Voltar</a><br><br>
-
-        <progress value="75" max="100"></progress>
-    </center>
+    <h1>Cadastro</h1>
+    <form id="cadastro" action="cadastrar.php" method="POST">
+        Nome: <input type="text" name="nome" required><br>
+      Login: <input type="text" name="login" required><br>
+      Senha: <input type="password" name="senha" required><br>
+      <input type="submit" name="cadastrar" value="Cadastrar"><br>
+      <progress value="75" max="100"></progress>
+    </form>
 </body>
 </html>
