@@ -2,22 +2,23 @@
 <?php
 include("conexao.php");
 $login = isset($_POST['login']) ? $_POST['login'] : ''; 
-$senha = isset($_POST['senha']) ? $_POST['senha'] : ''; 
+$senhaantiga = isset($_POST['senha_atual']) ? $_POST['senha_atual'] : ''; 
+$senhanova = isset($_POST['nova_senha']) ? $_POST['nova_senha'] : ''; 
 
-$update= "UPDATE login SET senha = '$senha' WHERE login = '$login'";
+$update= "UPDATE login SET senha = '$senhanova' WHERE login = '$login'";
 $query= mysqli_query($conexao, $update);
 ?>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type= "text/css" href="estilo.css">
-    <title></title>
+    <title>Projeto A3 MANHÃ</title>
 </head>
 <body>
-  Senha alterada com sucesso!
+  <h2>Senha alterada com sucesso!</h2>
     <a href="login.php">Voltar</a>
 </body>
 </html>
