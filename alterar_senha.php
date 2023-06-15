@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type= "text/css" href="estilo.css">
-    <title></title>
+    <title>Projeto A3 MANHÃ</title>
 </head>
 <body>
     <center> 
         <form id="alterada" action="alterado.php" method="POST" >
-            Senha Atual:<input type="password" name="senha" required><br><br>
-            Nova Senha:<input type="password" name="senha" required><br><br>
-            Confirmar Senha:<input type="password" name="senha" required><br><br>
+            Login:<input type="text" name="login" required><br>
+            Senha Atual:<input type="password" name="senha_atual" required><br><br>
+            Nova Senha:<input type="password" name="nova_senha" required><br><br>
+            Confirmar Senha:<input type="password" name="confirmar_senha" required><br><br>
             <input type="submit" name="alterar" value="Alterar senha">
         </form>
 </center>
