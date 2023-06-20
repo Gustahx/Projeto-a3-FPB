@@ -9,23 +9,24 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" text="text/css" href="estilo.css">   
-    <title>Projeto A3 MANHÃ</title>
+    <title>Projeto A3 - Programação e Modelagem Manhã</title>
 </head>
 <body>
-    Olá,
-    <?php
-    if(isset($_SESSION['nome'])==null){
-        ?>
-        visitante <br>
-        <a href="login.php"><input type="submit" name="login" value="Login"><br><br>
+    <h3>
+        Olá,
         <?php
-    }else {
-        echo $_SESSION['nome'];?>
-        <a href="cadastro.php"><input type="submit" name="cadastrar" value="Cadastrar"><br><br>
-        <a href="listar.php"><input type="submit" name="listar" value="Listar Usúario"><br><br>
-        <a href="alterar.php"><input type="submit" name="alterar" value="Alterar senha"><br><br>
-        <a href="logout.php"><input type="submit" name="sair" value="Sair"><br><br>
-        <?php } ?>
-        <progress value="50" max="100"></progress>
+        if(isset($_SESSION['nome'])==null){
+            ?>
+            Visitante <br>
+            <a href="login.php"><input type="submit" name="login" value="Login"><br><br>
+            <?php
+        }else {
+            echo $_SESSION['nome'];?><br><br>
+            <a href="cadastro.php"><input type="submit" name="cadastrar" value="Cadastrar"><br><br>
+            <a href="listar_usuario.php"><input type="submit" name="listar" value="Listar Usúario"><br><br>
+            <a href="alterar_senha.php"><input type="submit" name="alterar" value="Alterar senha"><br><br>
+            <a href="logout.php"><input type="submit" name="sair" value="Sair"><br><br>
+            <?php } ?>
+    </h3>        
 </body>
 </html>
