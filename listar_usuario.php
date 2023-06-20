@@ -19,7 +19,7 @@ $senha= isset ($_POST ['senha']) ? $_POST ['senha'] : '';
 <body>
     <section id="Lista">
         <center>
-            <h1>
+            <h3>
                 <?php
                 $select="SELECT nome, login FROM login";
                 $resultado= mysqli_query ($conexao, $select);
@@ -33,7 +33,7 @@ $senha= isset ($_POST ['senha']) ? $_POST ['senha'] : '';
                 ?>
                 <br><br>
                 <a href="index.php">Voltar</a>
-            </h1>
+            </h3>
         </center>
     </section>
 </body>
