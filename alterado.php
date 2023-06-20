@@ -15,7 +15,7 @@ $query= mysqli_query($conexao, $update);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type= "text/css" href="estilo.css">
-    <title>Projeto A3 MANHÃ</title>
+    <title> Projeto A3 - Programação e Modelagem </title>
 </head>
 <body>
   <h2>Senha alterada com sucesso!</h2>
